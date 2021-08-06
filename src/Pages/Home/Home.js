@@ -12,8 +12,9 @@ function Home() {
   return (
     <div className="homeContainer">
       <Navbar />
-
-      <Footer x={x} y={y} />
+      <div className="homeFooter">
+        <Footer x={x} y={y} />
+      </div>
     </div>
   );
 }

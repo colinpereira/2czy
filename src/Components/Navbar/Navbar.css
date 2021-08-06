@@ -36,6 +36,18 @@
   font-size: 1rem;
 }
 
+.navLinks:hover {
+  transform: scale(1.3);
+  transition: all ease-in 0.2s;
+  cursor: pointer;
+}
+
+.navLeft:hover {
+  transform: scale(1.2);
+  transition: all ease-in 0.2s;
+  cursor: pointer;
+}
+
 .navMid span {
   letter-spacing: 2px;
   font-size: 1.2rem;
@@ -60,7 +72,7 @@
 }
 
 .navMid span:hover {
-  color: rgb(230, 41, 41);
+  color: var(--header-red);
   transition: all ease-in-out 0.4s;
 }
 

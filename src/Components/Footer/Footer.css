@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 0px 20px;
   width: calc(100vw - 55px);
 }
 
@@ -16,17 +16,22 @@
 }
 
 .footerMid {
-  width: 70%;
+  width: 60%;
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
+  transform: scale(1.2);
+}
+
+.footArrow {
+  animation: pulse 5s infinite;
 }
 
 .footerRight {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 10%;
+  width: 20%;
 }
 
 .footerLeft-coordinates {
@@ -38,4 +43,58 @@
   font-weight: 500;
   margin: 0;
   padding: 0;
+  color: rgb(255, 255, 255, 0.2);
+}
+
+.footerLeft h3:hover {
+  color: white;
+  transition: all ease-in-out 0.5s;
+}
+
+.footLinks {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+h4:hover {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.2s;
+}
+
+@keyframes pulse {
+  0% {
+    color: var(--black-bckg);
+  }
+  10% {
+    color: #ff4136;
+  }
+  20% {
+    color: #00f128;
+  }
+  30% {
+    color: #4452ce;
+  }
+  40% {
+    color: #fff4f4;
+  }
+  50% {
+    color: #ff36de;
+  }
+  60% {
+    color: #ff36de;
+  }
+  70% {
+    color: #ff36de;
+  }
+  80% {
+    color: #ff36de;
+  }
+  90% {
+    color: #ff36de;
+  }
+  100% {
+    color: #ff36de;
+  }
 }

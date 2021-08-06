@@ -10,11 +10,13 @@ function Navbar() {
           2HOME
         </Link>
       </div>
+
       <div className="navMid">
         <Link className="navLinks" to="/">
           <span></span>
         </Link>
       </div>
+
       <div className="navRight">
         <Link className="navLinks" to="/">
           2SHOP
