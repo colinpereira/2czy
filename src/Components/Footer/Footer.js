@@ -9,24 +9,27 @@ function Footer({ x, y }) {
 
   return (
     <div className="footerContainer">
-      <div className="footerLeft">
-        <div className="footerLeft-coordinates">
-          <h3>
-            ({x}, {y})
-          </h3>
+      <div className="dateTimeComponent">
+        <h3 className="coordinates">
+          ({x}, {y})
+        </h3>
+
+        <h3 className="footerLeft-date">{date.toUTCString()}</h3>
+      </div>
+      <div className="footerComponent">
+        <div className="footerLeft">
+          <Link className="navLinks" to="/">
+            <h4>2CONTACT</h4>
+          </Link>
         </div>
-        <h3>{date.toUTCString()}</h3>
-        <Link className="navLinks" to="/">
-          <h4>2CONTACT</h4>
-        </Link>
-      </div>
-      <div className="footerMid">
-        <KeyboardArrowDownIcon className="footArrow" />
-      </div>
-      <div className="footerRight">
-        <Link className="navLinks" to="/">
-          2CASE STUDY
-        </Link>
+        <div className="footerMid">
+          <KeyboardArrowDownIcon className="footArrow" />
+        </div>
+        <div className="footerRight">
+          <Link className="navLinks" to="/">
+            2CASE STUDY
+          </Link>
+        </div>
       </div>
     </div>
   );
