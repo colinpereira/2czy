@@ -1,0 +1,101 @@
+.navbarContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: calc(100vw - 55px);
+  height: 35px;
+}
+
+.navLeft {
+  width: 10%;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.navMid {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 10%;
+}
+
+.navLinks {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.navMid span {
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  overflow: hidden;
+  /* background: linear-gradient(
+    to right,
+    rgb(230, 41, 41),
+    rgb(230, 41, 41) 50%,
+    rgb(255, 255, 255) 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease; */
+}
+
+.navMid span:before {
+  content: "2CZY";
+  animation: animate infinite 8s;
+}
+
+.navMid span:hover {
+  color: rgb(230, 41, 41);
+  transition: all ease-in-out 0.4s;
+}
+
+@keyframes animate {
+  0% {
+    content: "2CZY";
+  }
+  10% {
+    content: "2सीजेडवाई";
+  }
+  20% {
+    content: "2 ج ض ذ";
+  }
+  30% {
+    content: "2 舒适";
+  }
+  40% {
+    content: "2 હૂંફાળું";
+  }
+  50% {
+    content: "2 아늑한";
+  }
+  60% {
+    content: "2 โคซี่";
+  }
+  70% {
+    content: "2 ấm cúng";
+  }
+  80% {
+    content: "II COMMODUS";
+  }
+  90% {
+    content: "2 útulné";
+  }
+  100% {
+    content: "2CZY";
+  }
+}

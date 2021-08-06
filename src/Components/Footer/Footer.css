@@ -1,0 +1,41 @@
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: calc(100vw - 55px);
+}
+
+.footerLeft {
+  width: 20%;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.footerMid {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerRight {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 10%;
+}
+
+.footerLeft-coordinates {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerLeft h3 {
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
