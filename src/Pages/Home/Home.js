@@ -5,6 +5,7 @@ import useMousePosition from "../../Hooks/useMouse";
 // Component imports
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
+import Canvas from "../../Components/MouseTrail/Canvas";
 
 function Home() {
   const { x, y } = useMousePosition();

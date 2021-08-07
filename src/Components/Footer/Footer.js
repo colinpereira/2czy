@@ -13,12 +13,11 @@ function Footer({ x, y }) {
         <h3 className="coordinates">
           ({x}, {y})
         </h3>
-
         <h3 className="footerLeft-date">{date.toUTCString()}</h3>
       </div>
       <div className="footerComponent">
         <div className="footerLeft">
-          <Link className="navLinks" to="/">
+          <Link className="footLinks" to="/">
             <h4>2CONTACT</h4>
           </Link>
         </div>
@@ -26,7 +25,7 @@ function Footer({ x, y }) {
           <KeyboardArrowDownIcon className="footArrow" />
         </div>
         <div className="footerRight">
-          <Link className="navLinks" to="/">
+          <Link className="footLinks" to="/">
             2CASE STUDY
           </Link>
         </div>
