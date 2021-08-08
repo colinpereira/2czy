@@ -63,10 +63,10 @@ const ModelComp = (props) => {
       <Picker />
       <Canvas>
         <ambientLight intensity={0.5} />
-        <spotLight intensity={0.5} position={[5, 20, 20]} />
+        {/* <spotLight intensity={0.5} position={[5, 20, 20]} /> */}
         <Suspense fallback={null}>
           <Model />
-          <Environment files="royal_esplanade_1k.hdr" />
+          <Environment files="syferfontein_0d_clear_1k.hdr" />
         </Suspense>
         <OrbitControls />
       </Canvas>
