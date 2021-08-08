@@ -1,11 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Home.css";
 import useMousePosition from "../../Hooks/useMouse";
 
 // Component imports
 import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
-import Canvas from "../../Components/MouseTrail/Canvas";
+
+import ModelComp from "../../Components/Model/Model";
 
 function Home() {
   const { x, y } = useMousePosition();
@@ -13,6 +14,9 @@ function Home() {
   return (
     <div className="homeContainer">
       <Navbar />
+      <div className="ThreeDModel">
+        <ModelComp />
+      </div>
       <Footer x={x} y={y} />
     </div>
   );

@@ -12,3 +12,7 @@
   align-items: center;
   justify-content: center;
 }
+
+.ThreeDModel {
+  height: calc(100vh - 100px);
+}
