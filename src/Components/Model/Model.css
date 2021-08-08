@@ -1,0 +1,7 @@
+.picker {
+  position: absolute !important;
+  top: 300px;
+  left: 40px;
+  width: 150px !important;
+  height: 150px !important;
+}

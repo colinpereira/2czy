@@ -14,5 +14,6 @@
 }
 
 .ThreeDModel {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 220px);
+  /* background-color: aqua; */
 }
