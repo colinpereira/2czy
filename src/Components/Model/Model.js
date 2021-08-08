@@ -3,7 +3,6 @@ import React, { useRef, useState, Suspense, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Environment, OrbitControls, useGLTF } from "@react-three/drei";
 import { proxy, useSnapshot } from "valtio";
-import { useProxy } from "valtio/macro";
 import { HexColorPicker } from "react-colorful";
 import "./Model.css";
 
@@ -36,7 +35,7 @@ function Model(props) {
     >
       <mesh
         geometry={nodes["2_world_obj"].geometry}
-        material-color={snap.items.materials["Material.001"]}
+        material-color={snap.items.materials}
         material={materials["Material.001"]}
         rotation={[Math.PI / 2, 0, 0]}
         scale={1.5}
@@ -49,12 +48,10 @@ const Picker = () => {
   const snap = useSnapshot(state, { sync: true });
   return (
     <div style={{ display: snap.current ? "block" : "none" }}>
-      <h1>{snap.current}</h1>
-      {console.log(state.items)}
       <HexColorPicker
         className="picker"
-        color={snap.items[snap.current]}
-        onChange={(color) => (state.items[snap.current] = color)}
+        color={snap.items.materials}
+        onChange={(color) => (state.items.materials = color)}
       />
     </div>
   );
