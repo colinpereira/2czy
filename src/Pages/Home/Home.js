@@ -1,6 +1,7 @@
 import React from "react";
 import "./Home.css";
 import useMousePosition from "../../Hooks/useMouse";
+import backVideo from "../../Assets/Videos/backVideo.mp4";
 
 // Component imports
 import Navbar from "../../Components/Navbar/Navbar";
@@ -14,6 +15,7 @@ function Home() {
   return (
     <div className="homeContainer">
       <Navbar />
+      <video src={backVideo} autoPlay loop muted />
       <div className="ThreeDModel">
         <ModelComp />
       </div>

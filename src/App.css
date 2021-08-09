@@ -1,3 +1,8 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 :root {
   --black-bckg: rgb(15, 15, 15);
   --header-red: rgb(202, 71, 71);
