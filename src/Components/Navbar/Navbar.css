@@ -6,6 +6,9 @@
   padding: 20px;
   width: calc(100vw - 55px);
   height: 35px;
+  position: fixed;
+  top: 0;
+  bottom: auto;
 }
 
 .navLeft {

@@ -34,7 +34,6 @@ function Home() {
         <Footer x={x} y={y} />
       </div>
       <div className="about" id="2about">
-        <Navbar />
         <div className="aboutContentContainer">
           <div className="aboutContentLeft">
             <img
