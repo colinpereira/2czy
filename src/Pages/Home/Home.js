@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import useMousePosition from "../../Hooks/useMouse";
 import backVideo from "../../Assets/Videos/backVideo.mp4";
@@ -13,14 +13,19 @@ function Home() {
   const { x, y } = useMousePosition();
 
   return (
-    <div className="homeContainer">
-      <Navbar />
-      <video src={backVideo} autoPlay loop muted />
-      <div className="ThreeDModel">
-        <ModelComp />
+    <>
+      <div className="homeContainer" id="2home">
+        <Navbar />
+        <video src={backVideo} autoPlay loop muted />
+        <div className="ThreeDModel">
+          <ModelComp />
+        </div>
+        <Footer x={x} y={y} />
       </div>
-      <Footer x={x} y={y} />
-    </div>
+      <div className="about" id="2about">
+        <h1>Hello</h1>
+      </div>
+    </>
   );
 }
 

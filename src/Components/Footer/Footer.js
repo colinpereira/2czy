@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useParams } from "react";
 import useDate from "react-use-date";
 import "./Footer.css";
 import { Link } from "react-router-dom";
@@ -17,12 +17,14 @@ function Footer({ x, y }) {
       </div>
       <div className="footerComponent">
         <div className="footerLeft">
-          <Link className="footLinks" to="/">
+          <Link className="footLinks" to="/2contact">
             <h4>2CONTACT</h4>
           </Link>
         </div>
         <div className="footerMid">
-          <KeyboardArrowDownIcon className="footArrow" />
+          <a href="#2about">
+            <KeyboardArrowDownIcon className="footArrow" />
+          </a>
         </div>
         <div className="footerRight">
           <Link className="footLinks" to="/">

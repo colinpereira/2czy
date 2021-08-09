@@ -1,0 +1,12 @@
+.contactContainer {
+  height: calc(100vh - 200px);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagramIcon {
+  cursor: pointer;
+  margin: 30px;
+}
