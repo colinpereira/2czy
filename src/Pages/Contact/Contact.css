@@ -4,9 +4,51 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.contactContainer h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.contact-IconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .instagramIcon {
   cursor: pointer;
-  margin: 30px;
+}
+
+.instagramIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  margin: 15px;
+}
+
+.emailIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  cursor: pointer;
+  height: 150px;
+  width: 150px;
+}
+
+.emailIcon {
+  color: white;
+  font-size: 5rem;
+  transform: scale(5);
+}
+
+.emailIcon:hover {
+  transform: scale(5) translateX(5px);
+  transition: all ease-in-out 0.3s;
 }

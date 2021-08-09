@@ -1,11 +1,18 @@
-import React, { useParams } from "react";
+import React, { useState } from "react";
 import useDate from "react-use-date";
 import "./Footer.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
+import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 
 function Footer({ x, y }) {
+  let history = useHistory();
   const date = useDate();
+  const [arrowUp, setArrow] = useState(true);
+
+  const handleArrow = () => {
+    arrowUp ? setArrow(false) : setArrow(true);
+  };
 
   return (
     <div className="footerContainer">
@@ -22,9 +29,15 @@ function Footer({ x, y }) {
           </Link>
         </div>
         <div className="footerMid">
-          <a href="#2about">
-            <KeyboardArrowDownIcon className="footArrow" />
-          </a>
+          {arrowUp ? (
+            <a onClick={handleArrow} href="#2home">
+              <KeyboardArrowDownIcon className="footArrow" />
+            </a>
+          ) : (
+            <a onClick={handleArrow} href="#2about">
+              <KeyboardArrowUpIcon className="footArrow" />
+            </a>
+          )}
         </div>
         <div className="footerRight">
           <Link className="footLinks" to="/">

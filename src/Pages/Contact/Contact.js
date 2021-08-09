@@ -21,19 +21,21 @@ function Contact() {
           <a
             href="https://www.instagram.com/2czy__ltd/"
             target="_blank"
-            className="instagramIcon"
+            className="instagramIconContainer"
           >
             <UseAnimations
               animation={instagram}
               strokeColor="#fff"
-              size="300"
+              size="150"
+              className="instagramIcon"
             />
           </a>
           <a
-            className="emailIcon"
+            className="emailIconContainer"
             href="mailto:2czyltd@gmail.com?subject = Feedback&body = Message"
+            target="_blank"
           >
-            <MailOutlineIcon />
+            <MailOutlineIcon className="emailIcon" />
           </a>
         </div>
       </div>
