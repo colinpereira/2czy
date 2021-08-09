@@ -5,3 +5,7 @@
   width: 150px !important;
   height: 150px !important;
 }
+
+.drag {
+  height: 100vh;
+}

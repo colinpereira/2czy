@@ -17,7 +17,7 @@ function Model(props) {
   const group = useRef();
   const snap = useSnapshot(state, { sync: true });
   const { nodes, materials } = useGLTF("model.glb");
-  const [hover, setHover] = useState(null);
+  const [hovered, setHover] = useState(null);
 
   return (
     <group
