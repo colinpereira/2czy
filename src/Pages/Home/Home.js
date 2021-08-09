@@ -20,10 +20,6 @@ function Home() {
   //   console.log(spin);
   // };
 
-  const handleText = () => {
-    document.getElementsByClassName("aboutContentp").innerHTML = "2world";
-  };
-
   return (
     <>
       {/* <div className="loaderContainer">
@@ -53,10 +49,9 @@ function Home() {
               a multi faceted design house working on advanced architectural
               solutions that supports the ecosystem; embraced by contemporary
               culture the body of work suggests a forward wave of ideas
-              transmitting through <b onClick={handleText}>2world</b>. Operative
-              in Catalunya, 2czy is working in progress to deliver and produce
-              physical results whilst cataloguing and showcasing on going
-              studies.
+              transmitting through <b>2world</b>. Operative in Catalunya, 2czy
+              is working in progress to deliver and produce physical results
+              whilst cataloguing and showcasing on going studies.
             </p>
           </div>
         </div>

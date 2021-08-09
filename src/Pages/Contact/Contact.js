@@ -4,6 +4,7 @@ import "./Contact.css";
 
 import UseAnimations from "react-useanimations";
 import instagram from "react-useanimations/lib/instagram";
+import twitter from "react-useanimations/lib/twitter";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 
 // Component imports
@@ -16,7 +17,19 @@ function Contact() {
     <>
       <Navbar />
       <div className="contactContainer">
-        <h1>GET IN TOUCH</h1>
+        <div className="contactFormContainer">
+          <h1>GET IN TOUCH</h1>
+          <form action="https://formspree.io/f/xqkwyvbz" method="POST">
+            <div className="formInputWrapper">
+              <input type="text" placeholder="Full Name" name="name" />
+              <input type="email" placeholder="Email" name="_replyto" />
+              <textarea placeholder="Message" name="message" />
+              <button className="glow-on-hover" type="submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
         <div className="contact-IconContainer">
           <a
             href="https://www.instagram.com/2czy__ltd/"
@@ -26,16 +39,21 @@ function Contact() {
             <UseAnimations
               animation={instagram}
               strokeColor="#fff"
-              size="150"
+              size="50"
               className="instagramIcon"
             />
           </a>
           <a
-            className="emailIconContainer"
-            href="mailto:2czyltd@gmail.com?subject = Feedback&body = Message"
+            href="https://twitter.com/aaron_2czy"
             target="_blank"
+            className="instagramIconContainer"
           >
-            <MailOutlineIcon className="emailIcon" />
+            <UseAnimations
+              animation={twitter}
+              strokeColor="#fff"
+              size="50"
+              className="instagramIcon"
+            />
           </a>
         </div>
       </div>
@@ -45,3 +63,27 @@ function Contact() {
 }
 
 export default Contact;
+
+{
+  /* <div className="contact-IconContainer">
+  <a
+    href="https://www.instagram.com/2czy__ltd/"
+    target="_blank"
+    className="instagramIconContainer"
+  >
+    <UseAnimations
+      animation={instagram}
+      strokeColor="#fff"
+      size="150"
+      className="instagramIcon"
+    />
+  </a>
+  <a
+    className="emailIconContainer"
+    href="mailto:2czyltd@gmail.com?subject = Feedback&body = Message"
+    target="_blank"
+  >
+    <MailOutlineIcon className="emailIcon" />
+  </a>
+</div>; */
+}

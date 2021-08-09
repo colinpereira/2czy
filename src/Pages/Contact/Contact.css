@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
 .contactContainer {
   height: calc(100vh - 200px);
+  margin-top: 75px;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -8,9 +11,166 @@
 }
 
 .contactContainer h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 50px;
   font-weight: 700;
+}
+
+.contactFormContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+}
+
+.formInputWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+}
+
+.formInputWrapper input {
+  background-color: rgb(87, 87, 87);
+  padding: 10px;
+  font-size: 1.3rem;
+  border: none;
+  margin: 20px 10px;
+  border-radius: 15px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+}
+
+.formInputWrapper input:focus {
+  border: none;
+  outline: none;
+  transform: scale(1.1);
+  transition: all ease-in-out 0.2s;
+}
+
+.formInputWrapper input:hover {
+  border: none;
+  outline: none;
+  transform: scale(1.1);
+  transition: all ease-in-out 0.2s;
+}
+
+.formInputWrapper input::placeholder {
+  color: white;
+  font-weight: 500;
+}
+
+.formInputWrapper textarea {
+  background-color: rgb(87, 87, 87);
+  padding: 10px;
+  font-size: 1.3rem;
+  border: none;
+  margin: 20px 10px;
+  border-radius: 15px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+}
+
+.formInputWrapper textarea:focus {
+  border: none;
+  outline: none;
+  transform: scale(1.1);
+  transition: all ease-in-out 0.2s;
+}
+
+.formInputWrapper textarea:hover {
+  border: none;
+  outline: none;
+  transform: scale(1.1);
+  transition: all ease-in-out 0.2s;
+}
+
+.formInputWrapper textarea::placeholder {
+  color: white;
+  font-weight: 500;
+}
+
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  margin: 20px 0px;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00b496,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 .contact-IconContainer {
@@ -21,34 +181,12 @@
 
 .instagramIcon {
   cursor: pointer;
+  margin-top: 20px;
 }
 
 .instagramIconContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 150px;
-  width: 150px;
-  margin: 15px;
-}
-
-.emailIconContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 15px;
-  cursor: pointer;
-  height: 150px;
-  width: 150px;
-}
-
-.emailIcon {
-  color: white;
-  font-size: 5rem;
-  transform: scale(5);
-}
-
-.emailIcon:hover {
-  transform: scale(5) translateX(5px);
-  transition: all ease-in-out 0.3s;
+  margin: 0px 15px;
 }
