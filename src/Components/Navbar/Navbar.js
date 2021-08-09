@@ -18,7 +18,7 @@ function Navbar() {
       </div>
 
       <div className="navRight">
-        <Link className="navLinks" to="/">
+        <Link className="navLinks" to="/2shop">
           2SHOP
         </Link>
       </div>

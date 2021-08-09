@@ -40,7 +40,7 @@ function Footer({ x, y }) {
           )}
         </div>
         <div className="footerRight">
-          <Link className="footLinks" to="/">
+          <Link className="footLinks" to="/2casestudy">
             2CASE STUDY
           </Link>
         </div>
