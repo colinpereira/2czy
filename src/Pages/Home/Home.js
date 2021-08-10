@@ -57,9 +57,10 @@ function Home() {
                   architectural solutions that supports the ecosystem; embraced
                   by contemporary culture, this dynamic body of work is a
                   trailblazer, transmitting a new league of ideas through
-                  <b>2world</b>. Operating from Catalunya, 2czy is progressively
-                  working towards delivering and producing physical results,
-                  whilst cataloguing and showcasing ongoing studies
+                  <b> 2world</b>. <br />
+                  <br /> Operating from Catalunya, 2czy is progressively working
+                  towards delivering and producing physical results, whilst
+                  cataloguing and showcasing ongoing studies
                 </p>
                 <UseAnimations
                   animation={rightArrow}
