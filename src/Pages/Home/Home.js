@@ -20,6 +20,15 @@ function Home() {
   //   console.log(spin);
   // };
 
+  const handleText = () => {
+    var x = document.getElementById("myDIV");
+    if (x.innerHTML === "Hello") {
+      x.innerHTML = "Swapped text!";
+    } else {
+      x.innerHTML = "Hello";
+    }
+  };
+
   return (
     <>
       {/* <div className="loaderContainer">
@@ -44,7 +53,7 @@ function Home() {
             />
           </div>
           <div className="aboutContentRight">
-            <p className="aboutContentp">
+            <p className="aboutContentp" id="changeText">
               2czy limited since 2018 is more than just a lifestyle brand it is
               a multi faceted design house working on advanced architectural
               solutions that supports the ecosystem; embraced by contemporary
