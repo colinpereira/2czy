@@ -16,7 +16,7 @@ const state = proxy({
 function Model(props) {
   const group = useRef();
   const snap = useSnapshot(state, { sync: true });
-  const { nodes, materials } = useGLTF("model.glb");
+  const { nodes, materials } = useGLTF("worldNewCompress.glb");
   const [hovered, setHover] = useState(null);
 
   return (
@@ -40,6 +40,13 @@ function Model(props) {
         rotation={[Math.PI / 2, 0, 0]}
         scale={1.5}
       />
+      {/* <mesh
+        geometry={nodes["2_world_obj"].geometry}
+        material-color={snap.items.materials}
+        material={materials["Material.001"]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={1.5}
+      /> */}
     </group>
   );
 }

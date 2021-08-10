@@ -119,3 +119,25 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+.homeRightContentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 28rem;
+}
+
+.homeRightContentContainer h3 {
+  font-size: 1.65rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.arrowIcon {
+  cursor: pointer;
+  margin-top: 40px;
+  width: 100%;
+  filter: invert(1);
+  background-color: rgb(0, 0, 0);
+  border-radius: 300px;
+}

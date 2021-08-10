@@ -5,7 +5,6 @@ import "./Contact.css";
 import UseAnimations from "react-useanimations";
 import instagram from "react-useanimations/lib/instagram";
 import twitter from "react-useanimations/lib/twitter";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
 
 // Component imports
 import Navbar from "../../Components/Navbar/Navbar";
@@ -57,7 +56,7 @@ function Contact() {
           </a>
         </div>
       </div>
-      <Footer x={x} y={y} />
+      <Footer x={x} y={y} showArrow={false} />
     </>
   );
 }

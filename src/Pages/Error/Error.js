@@ -16,7 +16,7 @@ function Error() {
       <img src={Logo} className="blackLogo" />
       <h1>UNDER MAINTENANCE</h1>
       <h3 className="errorMessage">we are loading</h3>
-      <Footer x={x} y={y} />
+      <Footer x={x} y={y} showArrow={false} />
     </div>
   );
 }

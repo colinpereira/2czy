@@ -5,7 +5,7 @@ import { Link, useHistory } from "react-router-dom";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 
-function Footer({ x, y }) {
+function Footer({ x, y, showArrow }) {
   let history = useHistory();
   const date = useDate();
   const [arrowUp, setArrow] = useState(true);
@@ -28,17 +28,22 @@ function Footer({ x, y }) {
             <h4>2CONTACT</h4>
           </Link>
         </div>
-        <div className="footerMid">
-          {arrowUp ? (
-            <a onClick={handleArrow} href="#2home">
-              <KeyboardArrowDownIcon className="footArrow" />
-            </a>
-          ) : (
-            <a onClick={handleArrow} href="#2about">
-              <KeyboardArrowUpIcon className="footArrow" />
-            </a>
-          )}
-        </div>
+        {showArrow ? (
+          <div className="footerMid">
+            {arrowUp ? (
+              <a onClick={handleArrow} href="#2home">
+                <KeyboardArrowDownIcon className="footArrow" />
+              </a>
+            ) : (
+              <a onClick={handleArrow} href="#2about">
+                <KeyboardArrowUpIcon className="footArrow" />
+              </a>
+            )}
+          </div>
+        ) : (
+          <div className="footerMid"></div>
+        )}
+
         <div className="footerRight">
           <Link className="footLinks" to="/2casestudy">
             2CASE STUDY
