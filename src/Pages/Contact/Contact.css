@@ -8,10 +8,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 2;
 }
 
 .contactContainer h1 {
-  font-size: 2rem;
+  font-size: 30px;
   margin-bottom: 50px;
   font-weight: 700;
 }
@@ -35,7 +36,7 @@
 .formInputWrapper input {
   background-color: rgb(87, 87, 87);
   padding: 10px;
-  font-size: 1.3rem;
+  font-size: 20px;
   border: none;
   margin: 20px 10px;
   border-radius: 15px;
@@ -61,12 +62,14 @@
 .formInputWrapper input::placeholder {
   color: white;
   font-weight: 500;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .formInputWrapper textarea {
   background-color: rgb(87, 87, 87);
   padding: 10px;
-  font-size: 1.3rem;
+  font-size: 20px;
   border: none;
   margin: 20px 10px;
   border-radius: 15px;
