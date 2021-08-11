@@ -28,34 +28,35 @@ function Contact() {
               </button>
             </div>
           </form>
-        </div>
-        <div className="contact-IconContainer">
-          <a
-            href="https://www.instagram.com/2czy__ltd/"
-            target="_blank"
-            className="instagramIconContainer"
-          >
-            <UseAnimations
-              animation={instagram}
-              strokeColor="#fff"
-              size="50"
-              className="instagramIcon"
-            />
-          </a>
-          <a
-            href="https://twitter.com/aaron_2czy"
-            target="_blank"
-            className="instagramIconContainer"
-          >
-            <UseAnimations
-              animation={twitter}
-              strokeColor="#fff"
-              size="50"
-              className="instagramIcon"
-            />
-          </a>
+          <div className="contact-IconContainer">
+            <a
+              href="https://www.instagram.com/2czy__ltd/"
+              target="_blank"
+              className="instagramIconContainer"
+            >
+              <UseAnimations
+                animation={instagram}
+                strokeColor="#fff"
+                size="35"
+                className="instagramIcon"
+              />
+            </a>
+            <a
+              href="https://twitter.com/aaron_2czy"
+              target="_blank"
+              className="instagramIconContainer"
+            >
+              <UseAnimations
+                animation={twitter}
+                strokeColor="#fff"
+                size="35"
+                className="instagramIcon"
+              />
+            </a>
+          </div>
         </div>
       </div>
+
       <Footer x={x} y={y} showArrow={false} />
     </>
   );

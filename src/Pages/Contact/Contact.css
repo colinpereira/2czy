@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 
 .contactContainer {
-  height: calc(100vh - 220px);
+  height: calc(100vh - 190px);
   margin-top: 75px;
   width: 100vw;
   display: flex;
@@ -9,23 +9,30 @@
   justify-content: center;
   flex-direction: column;
   z-index: 2;
+  overflow-y: scroll;
 }
 
 .contactContainer h1 {
-  font-size: 30px;
-  margin-bottom: 50px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .contactFormContainer {
+  overflow-y: scroll;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   width: 30%;
-  height: calc(100vh - 350px);
-  background-color: #002bff;
+  height: 100%;
   overflow-y: hidden;
+}
+
+.contact-IconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .formInputWrapper {
@@ -39,7 +46,7 @@
 .formInputWrapper input {
   background-color: rgb(87, 87, 87);
   padding: 10px;
-  font-size: 20px;
+  font-size: 1rem;
   border: none;
   margin: 20px 10px;
   border-radius: 15px;
@@ -179,15 +186,9 @@
   }
 }
 
-.contact-IconContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .instagramIcon {
   cursor: pointer;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .instagramIconContainer {
