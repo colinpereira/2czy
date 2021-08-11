@@ -52,17 +52,17 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  height: calc(100vh - 240px);
-  width: 90%;
+  height: calc(100vh - 300px);
+  width: 100vw;
 }
 
 .aboutContentLeft {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 40%;
+  flex: 35%;
   margin: 10px;
-  height: calc(100vh - 240px);
+  height: calc(100vh - 300px);
 }
 
 .aboutContentRight {
@@ -70,10 +70,9 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  overflow-y: scroll;
-  flex: 60%;
+  flex: 65%;
   margin: 10px;
-  height: calc(100vh - 240px);
+  height: calc(100vh - 300px);
 }
 
 .aboutContentp {
@@ -87,7 +86,7 @@ body {
 }
 
 .blackLogo {
-  width: 80%;
+  width: 75%;
   filter: invert(1);
   -webkit-animation: spin 7s linear infinite;
   -moz-animation: spin 7s linear infinite;
