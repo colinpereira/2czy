@@ -22,11 +22,11 @@ function Footer({ x, y, showArrow }) {
         <h3 className="footerLeft-date">{date.toUTCString()}</h3>
       </div>
       <div className="footerComponent">
-        <div className="footerLeft">
+        {/* <div className="footerLeft">
           <Link className="footLinks" to="/2contact">
             <h4>2CONTACT</h4>
           </Link>
-        </div>
+        </div> */}
         {showArrow ? (
           <div className="footerMid">
             {arrowUp ? (
@@ -43,11 +43,11 @@ function Footer({ x, y, showArrow }) {
           <div className="footerMid"></div>
         )}
 
-        <div className="footerRight">
+        {/* <div className="footerRight">
           <Link className="footLinks" to="/2casestudy">
             2CASE STUDY
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
