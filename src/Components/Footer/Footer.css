@@ -59,6 +59,15 @@
   transition: all ease-in-out 0.2s;
 }
 
+.bottomText {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px;
+}
+
 .footerLeft-date {
   color: rgb(255, 255, 255, 0.15);
   cursor: default;

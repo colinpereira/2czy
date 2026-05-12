@@ -27,6 +27,7 @@ function Footer({ x, y, showArrow }) {
             <h4>2CONTACT</h4>
           </Link>
         </div> */}
+        <h3 className="bottomText">Don't miss out. Sign up.</h3>
         {showArrow ? (
           <div className="footerMid">
             {arrowUp ? (

@@ -5,7 +5,7 @@ import "./App.css";
 // Component imports
 import Home from "./Pages/Home/Home.jsx";
 import Shop from "./Pages/Shop/Shop.jsx";
-import About from "./Pages/About/About.jsx";
+import CaseStudy from "./Pages/About/About.jsx";
 import Contact from "./Pages/Contact/Contact.jsx";
 import Error from "./Pages/Error/Error.jsx";
 
@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/2shop" element={<Error />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/2casestudy" element={<Error />} />
           <Route path="/2contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
         </Routes>
