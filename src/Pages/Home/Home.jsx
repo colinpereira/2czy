@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
-import useMousePosition from "../../Hooks/useMouse";
+import useMousePosition from "../../Hooks/useMouse.jsx";
 import backVideo from "../../Assets/Videos/backVideo.mp4";
 import UseAnimations from "react-useanimations";
 
 // Component imports
-import Navbar from "../../Components/Navbar/Navbar";
-import Footer from "../../Components/Footer/Footer";
+import Navbar from "../../Components/Navbar/Navbar.jsx";
+import Footer from "../../Components/Footer/Footer.jsx";
 
-import ModelComp from "../../Components/Model/Model";
+import ModelComp from "../../Components/Model/Model.jsx";
 
 import Logo from "../../Assets/Images/2czyBlackLogo.png";
 import rightArrow from "react-useanimations/lib/arrowDown";

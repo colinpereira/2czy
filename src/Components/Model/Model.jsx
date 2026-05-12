@@ -1,4 +1,3 @@
-import ReactDOM from "react-dom";
 import React, { useRef, useState, Suspense, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Environment, OrbitControls, useGLTF } from "@react-three/drei";
@@ -25,12 +24,14 @@ function Model(props) {
       {...props}
       dispose={null}
       onPointerOver={(e) => (
-        e.stopPropagation(), setHover(e.object.material.name)
+        e.stopPropagation(),
+        setHover(e.object.material.name)
       )}
       onPointerOut={(e) => e.intersections.length === 0 && setHover(null)}
       onPointerMissed={() => (state.current = null)}
       onPointerDown={(e) => (
-        e.stopPropagation(), (state.current = e.object.material.name)
+        e.stopPropagation(),
+        (state.current = e.object.material.name)
       )}
     >
       <mesh

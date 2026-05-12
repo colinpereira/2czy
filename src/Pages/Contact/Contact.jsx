@@ -1,5 +1,5 @@
 import React from "react";
-import useMousePosition from "../../Hooks/useMouse";
+import useMousePosition from "../../Hooks/useMouse.jsx";
 import "./Contact.css";
 
 import UseAnimations from "react-useanimations";
@@ -7,8 +7,8 @@ import instagram from "react-useanimations/lib/instagram";
 import twitter from "react-useanimations/lib/twitter";
 
 // Component imports
-import Navbar from "../../Components/Navbar/Navbar";
-import Footer from "../../Components/Footer/Footer";
+import Navbar from "../../Components/Navbar/Navbar.jsx";
+import Footer from "../../Components/Footer/Footer.jsx";
 
 function Contact() {
   const { x, y } = useMousePosition();
